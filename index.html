@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/normalize.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <title>Fylo data storage component</title>
+    </head>
+    <body>
+        <article class="container card-block grid grid--4x2">
+            <section class="card card--primary card--filo">
+                <img src="/images/logo.svg" alt="" class="logo" />
+                <div class="icons">
+                    <span class="icon-container">
+                        <svg class="icon">
+                            <use xlink:href="images/sprites.svg#icon-document"></use>
+                        </svg>
+                    </span>
+                    <span class="icon-container">
+                        <svg class="icon">
+                            <use xlink:href="images/sprites.svg#icon-folder"></use>
+                        </svg>
+                    </span>
+                    <span class="icon-container">
+                        <svg class="icon">
+                            <use xlink:href="images/sprites.svg#icon-upload"></use>
+                        </svg>
+                    </span>
+                </div>
+            </section>
+            <section class="card card--primary">
+                <p class="storage-info">You’ve used <strong>815 GB</strong> of your storage</p>
+                <div class="progress-bar">
+                    <div class="progress-bar__fill">
+                        <div class="progress-bar__pointer"></div>
+                    </div>
+                </div>
+                <div class="storage">
+                    <span>0 GB</span>
+                    <span>1000 GB</span>
+                </div>
+                <div class="storage-left">
+                    <span class="storage-left__numbers">185</span>
+                    <span class="storage-left__gb">GB Left</span>
+                </div>
+            </section>
+        </article>
+    </body>
+</html>
